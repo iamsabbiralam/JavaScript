@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <section id="platform" class="md:px-24 px-0 py-24">
+        <div class="container max-w-screen-xl mx-auto md:px-6 px-4">
+            <div class="flex flex-wrap">
+                <div class="main-section w-full mb-10">
+                    <div>
+                        <!-- TODO: dont remove this tag and write all your code in this tag -->
+                        
+                        <div class="mb-4 shadow p-6">
+                            <form action="{{.FormAction}}" method="POST" enctype="multipart/form-data">
+                                
+                                <div class="row">
+                                    <div class="xl:w-1/4 w-full px-4">
+                                    </div>
+                                    <div class="xl:w-3/4 w-full px-4 pt-5 xl:pt-0">
+                                      <span class="cursor-pointer flex justify-end mr-2" onclick="myFunction2()">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+                                                        </svg>
+                                                    </span>
+                                                    <div id="jobEx">
+                                        <div class="flex flex-wrap shadow rounded px-6 pt-4 pb-2 mt-4 ">
+                                            <div class="flex justify-between w-full">
+                                                <label for="" class="text-xl mb-3">Job Experience</label>
+                                            </div>
+                                            <div class="row" id="">
+                                                <div class="w-full md:w-1/2 px-4">
+                                                    <label class="uppercase text-gray-700 text-xs mb-2" name="CompanyName">
+                                                        Company Name
+                                                    </label>
+                                                    <input
+                                                        class="mb-2 w-full text-gray-700 border border-gray-200 rounded py-3 px-4 focus:outline-none focus:border-default-color bg-gray-200"
+                                                        placeholder="Enter CompanyName" type="text" name="CompanyName"/>
+                                                </div>
+                                                 <div class="w-full md:w-1/2 px-4">
+                                                    <label class="uppercase text-gray-700 text-xs mb-2" name="Designation">
+                                                        Designation
+                                                    </label>
+                                                    <input
+                                                        class="mb-2 w-full text-gray-700 border border-gray-200 rounded py-3 px-4 focus:outline-none focus:border-default-color bg-gray-200"
+                                                        placeholder="Enter Designation" type="text" name="Designation"/>
+                                                </div> 
+                                                <div class="w-full md:w-1/2 px-4">
+                                                    <label class="uppercase text-gray-700 text-xs mb-2" name="CompanyAddress">
+                                                        Company Address
+                                                    </label>
+                                                    <input
+                                                        class="mb-2 w-full text-gray-700 border border-gray-200 rounded py-3 px-4 focus:outline-none focus:border-default-color bg-gray-200"
+                                                        placeholder="Enter Company Address" type="text" name="CompanyAddress"/>
+                                                </div> 
+                                                <div class="w-full md:w-1/2 px-4">
+                                                    <label class="uppercase text-gray-700 text-xs mb-2" name="CompanyPhone">
+                                                        Company Phone
+                                                    </label>
+                                                    <input
+                                                        class="mb-2 w-full text-gray-700 border border-gray-200 rounded py-3 px-4 focus:outline-none focus:border-default-color bg-gray-200"
+                                                        placeholder="Enter Company Phone" type="text" name="CompanyPhone"/>
+                                                </div>
+                                                <div class="w-full md:w-1/2 px-4">
+                                                    <div class="w-full">
+                                                        <label class="uppercase text-gray-700 text-xs mb-2" name="CompanyWebsite">
+                                                            Company Website
+                                                        </label>
+                                                        <input
+                                                            class="mb-2 w-full text-gray-700 border border-gray-200 rounded py-3 px-4 focus:outline-none focus:border-default-color bg-gray-200"
+                                                            placeholder="Enter Company Website" type="text" name="CompanyWebsite"/>
+                                                    </div>
+                                                    <div class="w-full">
+                                                        <label class="uppercase text-gray-700 text-xs mb-2" name="StartedDate">
+                                                            Start Date
+                                                        </label>
+                                                        <input
+                                                            class="mb-2 w-full text-gray-700 border border-gray-200 rounded py-3 px-4 focus:outline-none focus:border-default-color bg-gray-200"
+                                                            placeholder="Enter Company Phone" type="date" name="StartedDate"/>
+                                                    </div> 
+                                                    <div class="w-full">
+                                                        <label class="uppercase text-gray-700 text-xs mb-2" name="EndDate">
+                                                            End Date
+                                                        </label>
+                                                        <input
+                                                            class="mb-2 w-full text-gray-700 border border-gray-200 rounded py-3 px-4 focus:outline-none focus:border-default-color bg-gray-200"
+                                                            placeholder="Enter Company Phone" type="date" name="EndDate"/>
+                                                    </div>
+                                                </div>
+                                                <div class="w-full md:w-1/2 px-4">
+                                                    <label class="uppercase text-gray-700 text-xs mb-2" name="Description">
+                                                        Description
+                                                    </label>
+                                                    <textarea class="mb-2 w-full text-gray-700 border border-gray-200 rounded py-3 px-4 focus:outline-none focus:border-default-color bg-gray-200"
+                                                    placeholder="Enter Description" type="text" name="Description" value="" name="" id="" cols="50" rows="8"></textarea>
+                                                </div>                                             
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                        <div id="newJob">
+                                        </div>
+                                        <div class="flex flex-wrap w-full sm:pt-6 pt-0">
+                                            <div class="w-full flex sm:justify-end justify-end">
+                                                <div class="sm:pt-0 pt-5">
+                                                    <button
+                                                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                                        id="submit" type="submit">
+                                                        Save
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+     function deleteRow(btn) {
+      
+        var row = btn.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+
+    }
+ 
+    function myFunction2() {
+        let jobEx = document.getElementById("jobEx")
+                let jobClone = jobEx.cloneNode(true);
+                let cell2 = "<div class='flex justify-end mr-2 pt-8'><span class='cursor-pointer' onclick = 'myFunction2()'><svg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'><path fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z' clip-rule='evenodd' /></svg></span ><span class='cursor-pointer minusjob' onclick='deleteRow(this)'><svg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'><path fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z' clip-rule='evenodd' /></svg></span></div >";
+                    console.log(jobClone.innerHTML);
+                document.getElementById("newJob").innerHTML += "<div>" + cell2 + jobClone.innerHTML + "</div>"
+        }
+
+      
+    
+  </script>
+</html>
